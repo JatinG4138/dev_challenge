@@ -1,0 +1,79 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 6,
+            "passed": 1,
+            "failed": 5,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784959362.737646,
+            "stop": 1784959362.9278264
+        },
+        "tests": [
+            {
+                "name": "tests/test_outputs.py::test_report_output_matches",
+                "status": "failed",
+                "duration": 0.020855000000000068,
+                "start": 1784959362.864559,
+                "stop": 1784959362.8929646,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py",
+                "trace": "expected_bundles = [{'artifact_count': 9, 'bundle_id': 'BND-101', 'total_bytes': 1201575}, {'artifact_count': 10, 'bundle_id': 'BND-102', 'total_bytes': 2188075}, {'artifact_count': 8, 'bundle_id': 'BND-103', 'total_bytes': 2079625}]\n\n    @pytest.fixture(scope=\"module\")\n    def first_report(expected_bundles) -> str:\n        _ = expected_bundles\n>       return run_report()\n               ^^^^^^^^^^^^\n\n/tests/test_outputs.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def run_report() -> str:\n        \"\"\"Run the candidate publisher; fail clearly if the entrypoint is missing.\"\"\"\n>       assert PUBLISHER_PATH.is_file(), (\n            f\"publisher missing at {PUBLISHER_PATH} \u2014 empty environment (Proof A) \"\n            \"must score reward 0\"\n        )\nE       AssertionError: publisher missing at /app/publisher/release-publisher.mjs \u2014 empty environment (Proof A) must score reward 0\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/app/publisher/release-publisher.mjs').is_file\n\n/tests/test_outputs.py:98: AssertionError"
+            },
+            {
+                "name": "tests/test_outputs.py::test_withdrawals_and_duplicates_reconciled",
+                "status": "failed",
+                "duration": 0.00012008300000010408,
+                "start": 1784959362.893078,
+                "stop": 1784959362.8957996,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py",
+                "trace": "expected_bundles = [{'artifact_count': 9, 'bundle_id': 'BND-101', 'total_bytes': 1201575}, {'artifact_count': 10, 'bundle_id': 'BND-102', 'total_bytes': 2188075}, {'artifact_count': 8, 'bundle_id': 'BND-103', 'total_bytes': 2079625}]\n\n    @pytest.fixture(scope=\"module\")\n    def first_report(expected_bundles) -> str:\n        _ = expected_bundles\n>       return run_report()\n               ^^^^^^^^^^^^\n\n/tests/test_outputs.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def run_report() -> str:\n        \"\"\"Run the candidate publisher; fail clearly if the entrypoint is missing.\"\"\"\n>       assert PUBLISHER_PATH.is_file(), (\n            f\"publisher missing at {PUBLISHER_PATH} \u2014 empty environment (Proof A) \"\n            \"must score reward 0\"\n        )\nE       AssertionError: publisher missing at /app/publisher/release-publisher.mjs \u2014 empty environment (Proof A) must score reward 0\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/app/publisher/release-publisher.mjs').is_file\n\n/tests/test_outputs.py:98: AssertionError"
+            },
+            {
+                "name": "tests/test_outputs.py::test_bundles_signed_with_current_key_accepted",
+                "status": "failed",
+                "duration": 0.00011337400000011044,
+                "start": 1784959362.8959036,
+                "stop": 1784959362.898172,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py",
+                "trace": "expected_bundles = [{'artifact_count': 9, 'bundle_id': 'BND-101', 'total_bytes': 1201575}, {'artifact_count': 10, 'bundle_id': 'BND-102', 'total_bytes': 2188075}, {'artifact_count': 8, 'bundle_id': 'BND-103', 'total_bytes': 2079625}]\n\n    @pytest.fixture(scope=\"module\")\n    def first_report(expected_bundles) -> str:\n        _ = expected_bundles\n>       return run_report()\n               ^^^^^^^^^^^^\n\n/tests/test_outputs.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def run_report() -> str:\n        \"\"\"Run the candidate publisher; fail clearly if the entrypoint is missing.\"\"\"\n>       assert PUBLISHER_PATH.is_file(), (\n            f\"publisher missing at {PUBLISHER_PATH} \u2014 empty environment (Proof A) \"\n            \"must score reward 0\"\n        )\nE       AssertionError: publisher missing at /app/publisher/release-publisher.mjs \u2014 empty environment (Proof A) must score reward 0\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/app/publisher/release-publisher.mjs').is_file\n\n/tests/test_outputs.py:98: AssertionError"
+            },
+            {
+                "name": "tests/test_outputs.py::test_receipts_and_tokens_persisted_in_duckdb",
+                "status": "failed",
+                "duration": 0.00010274900000029064,
+                "start": 1784959362.8982644,
+                "stop": 1784959362.9004369,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py",
+                "trace": "expected_bundles = [{'artifact_count': 9, 'bundle_id': 'BND-101', 'total_bytes': 1201575}, {'artifact_count': 10, 'bundle_id': 'BND-102', 'total_bytes': 2188075}, {'artifact_count': 8, 'bundle_id': 'BND-103', 'total_bytes': 2079625}]\n\n    @pytest.fixture(scope=\"module\")\n    def first_report(expected_bundles) -> str:\n        _ = expected_bundles\n>       return run_report()\n               ^^^^^^^^^^^^\n\n/tests/test_outputs.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def run_report() -> str:\n        \"\"\"Run the candidate publisher; fail clearly if the entrypoint is missing.\"\"\"\n>       assert PUBLISHER_PATH.is_file(), (\n            f\"publisher missing at {PUBLISHER_PATH} \u2014 empty environment (Proof A) \"\n            \"must score reward 0\"\n        )\nE       AssertionError: publisher missing at /app/publisher/release-publisher.mjs \u2014 empty environment (Proof A) must score reward 0\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/app/publisher/release-publisher.mjs').is_file\n\n/tests/test_outputs.py:98: AssertionError"
+            },
+            {
+                "name": "tests/test_outputs.py::test_idempotent_rerun_no_duplicate_publications",
+                "status": "failed",
+                "duration": 0.0001011669999999576,
+                "start": 1784959362.9005544,
+                "stop": 1784959362.9026315,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py",
+                "trace": "expected_bundles = [{'artifact_count': 9, 'bundle_id': 'BND-101', 'total_bytes': 1201575}, {'artifact_count': 10, 'bundle_id': 'BND-102', 'total_bytes': 2188075}, {'artifact_count': 8, 'bundle_id': 'BND-103', 'total_bytes': 2079625}]\n\n    @pytest.fixture(scope=\"module\")\n    def first_report(expected_bundles) -> str:\n        _ = expected_bundles\n>       return run_report()\n               ^^^^^^^^^^^^\n\n/tests/test_outputs.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def run_report() -> str:\n        \"\"\"Run the candidate publisher; fail clearly if the entrypoint is missing.\"\"\"\n>       assert PUBLISHER_PATH.is_file(), (\n            f\"publisher missing at {PUBLISHER_PATH} \u2014 empty environment (Proof A) \"\n            \"must score reward 0\"\n        )\nE       AssertionError: publisher missing at /app/publisher/release-publisher.mjs \u2014 empty environment (Proof A) must score reward 0\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/app/publisher/release-publisher.mjs').is_file\n\n/tests/test_outputs.py:98: AssertionError"
+            },
+            {
+                "name": "tests/test_outputs.py::test_revoked_key_signature_rejected",
+                "status": "passed",
+                "duration": 0.024871167000000582,
+                "start": 1784959362.9027064,
+                "stop": 1784959362.9276838,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py"
+            }
+        ]
+    }
+}

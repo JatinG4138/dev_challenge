@@ -1,0 +1,74 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 6,
+            "passed": 6,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784959363.6156042,
+            "stop": 1784959364.1432002
+        },
+        "tests": [
+            {
+                "name": "tests/test_outputs.py::test_report_output_matches",
+                "status": "passed",
+                "duration": 0.286193958000001,
+                "start": 1784959363.6659074,
+                "stop": 1784959363.9522614,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py"
+            },
+            {
+                "name": "tests/test_outputs.py::test_withdrawals_and_duplicates_reconciled",
+                "status": "passed",
+                "duration": 0.00017258399999953156,
+                "start": 1784959363.952434,
+                "stop": 1784959363.952672,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py"
+            },
+            {
+                "name": "tests/test_outputs.py::test_bundles_signed_with_current_key_accepted",
+                "status": "passed",
+                "duration": 0.0017638749999999703,
+                "start": 1784959363.952755,
+                "stop": 1784959363.9545968,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py"
+            },
+            {
+                "name": "tests/test_outputs.py::test_receipts_and_tokens_persisted_in_duckdb",
+                "status": "passed",
+                "duration": 0.013911125000000801,
+                "start": 1784959363.9547002,
+                "stop": 1784959363.9687142,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py"
+            },
+            {
+                "name": "tests/test_outputs.py::test_idempotent_rerun_no_duplicate_publications",
+                "status": "passed",
+                "duration": 0.16152404099999984,
+                "start": 1784959363.968891,
+                "stop": 1784959364.130529,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py"
+            },
+            {
+                "name": "tests/test_outputs.py::test_revoked_key_signature_rejected",
+                "status": "passed",
+                "duration": 0.012331416000000317,
+                "start": 1784959364.1306598,
+                "stop": 1784959364.1430917,
+                "retries": 0,
+                "file_path": "tests/test_outputs.py"
+            }
+        ]
+    }
+}
